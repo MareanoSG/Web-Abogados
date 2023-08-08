@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #F9F6F2;
+    
+}
+#paleta{
+    color: #381E13;
+    color: #8D6E63;
+    color: #F9F6F2;
+    color: #B98E2E;
+    color: #000000;
+}
+
+#idiom_box{
+    display: flex;
+    padding: 5px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+#idiom_box img{
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+    opacity: 20%;
+    transition: 0.2s height ease-in-out, 0.2s opacity ease-in-out;
+}
+#idiom_box img:hover{
+    opacity: 100%;
+    height: 25px;
+    transition: 0.2s;
+}
+#idiom_box h4{
+    font-family: 'Urbanist';
+    font-size: 0px;
+    transition: 0.2s font-size;
+}
+#btn-spanish{
+    display: none;
+}
+
+#idiom_box img:hover + #idiom_box-text {
+    font-size: 1rem;
+}
+
+#header_box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+#header_box img{
+    width: 180px;
+}
+#header_box nav{
+    width: 270px;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_box nav a{
+    font-family: 'Merriweather';
+    color: #B98E2E;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+#header_box nav a:hover{
+    text-decoration: underline;
+    color: #381E13;
+}
+
+#main_box{
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../RESOURCES/law-bg.jpg');
+    border-radius: 5px;
+}
+#main_box-1{
+    width: 70%;
+}
+#main_box-1 h2{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Urbanist';
+    text-shadow: 0 0 4px black;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+#main_box-2{
+    background-color: #B98E2E;
+    box-shadow: 0 0 4px black;
+    margin: 40px;
+    border-radius: 5px;
+    width: 20%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#main_box-2 h2{
+    color: #F9F6F2;
+    font-family: 'Urbanist';
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+}
+#main_box-2 img{
+    width: 100px;
+    transition: 0.1s transform ease-in-out;
+}
+#main_box-2 img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+
+#mobile-nav_box{
+    position: fixed;
+    display: none;
+    justify-content: right;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    animation: 0.2s anim-mobile-nav_box;
+}
+@keyframes anim-mobile-nav_box{
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+#mobile-nav_box nav{
+    background-color: #8d6e63ef;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 0 6px black;
+    overflow: scroll;
+}
+#mobile-nav_box nav a{
+    border-bottom: solid 7px white;
+    width: 100%;
+    padding: 18px;
+    padding-left: 0;
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Urbanist';
+    font-size: 1.5rem;
+    transition: 0.2s padding ease-in-out, 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+}
+#mobile-nav_box nav a:hover{
+    background-color: white;
+    color: black;
+    padding-left: 18px;
+    transition: 0.2s;
+}
+#mobile-nav_box h2{
+    font-size: 7rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+#btn-open_menu{
+    width: 60px;
+    display: none;
+    margin: 20px;
+}
+
+@media (max-width: 550px){
+    #btn-open_menu{
+        display: flex;
+    }
+    #header_box{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 20vh;
+        position: fixed;
+        background-color: #f9f6f2f5;
+        z-index: 100;
+    }
+    #mobile-nav_box{
+        z-index: 1000;
+    }
+    .spacer{
+        width: 100%;
+        height: 20vh;
+    }
+    #main_box{
+        width: 100vw;
+        background-position: left;
+    }
+    #main_box-1{
+        padding: 0;
+        
+    }
+    #main_box h2{
+        font-size: 3rem;
+        width: 100%;
+        margin-left: 20px;
+    }
+    #header_box nav{
+        display: none;
+    }
+    
+    #main_box-2{
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    #mobile-nav_box nav{
+        width: 100%;
+    }
+}
+@media (max-width: 1250px){
+    #mobile-nav_box nav{
+        width: 100%;
+    }
+}

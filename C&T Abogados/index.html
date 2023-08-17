@@ -26,6 +26,22 @@
             <a href="#info_box-contact" id="mobile-btn_team">Contacto</a>
         </nav>
     </div>
+    <section id="post-content_box">
+      <article id="post-content">
+        <div id="post-content-1">
+          <h2>
+            Error
+          </h2>
+          <h3 onclick="togglePost()">×</h3>
+        </div>
+        <div id="post-content-2">
+          <h4><i>Por: <b></b></i><br></h4>
+          <p>
+            No se encontró la publicación.
+          </p>
+        </div>
+      </article>
+    </section>
     <section id="map_box">
       <div id="map_box-info">
         <div id="map_box-info-1">
@@ -52,15 +68,15 @@
     <header id="header_box">
         <img id="header_box-logo" src="RESOURCES/logo-sf.png" alt="">
         <nav>
-            <a href="#contact_box-info-mail" id="btn_about">Acerca</a>
+            <a href="#about_box" id="btn_about">Acerca</a>
             <hr>
-            <a href="" id="btn_areas">Areas de práctica</a>
+            <a href="#info_box" id="btn_areas">Areas de práctica</a>
             <hr>
-            <a href="" id="btn_team">Equipo</a>
+            <a href="#team_box" id="btn_team">Equipo</a>
             <hr>
-            <a href="" id="btn_post">Publicaciones</a>
+            <a href="#post_box" id="btn_post">Publicaciones</a>
             <hr>
-            <a href="" id="btn_contact">Contacto</a>
+            <a href="#contact_box" id="btn_contact">Contacto</a>
         </nav>
         <div id="btn-open_menu" onclick="toggleMenu(this)">
             <img src="RESOURCES/menu.svg" alt="">
@@ -81,7 +97,7 @@
       <h2 id="about_box-about-title">Acerca de</h2>
       <div id="about_box-1">
         <img src="RESOURCES/logo-sf-3.png" alt="">
-        <p>
+        <p id="about_text">
           CYT Abogados fue fundado por profesionales jóvenes, con alta capacitación y con experiencia en diversas áreas de la abogacía, prestando servicios tanto a particulares como a empresas, con vocación de servicio y orientación a resultados. Con capacitación continua y permanente, buscamos asesorar a nuestros clientes trabajando de manera cercana y ofreciendo valor agregado con calidad técnica en las áreas de práctica del estudio.
         </p>
       </div>
@@ -234,7 +250,7 @@
           
           <section id="info_box-container">
               <div class="container reveal fade-left">
-                <h2 id="area_title">Academia y consultoria</h2>
+                <h2 id="area_title">Academia y consultoría</h2>
                 <hr id="area_title-line">
                 <div class="text-container" id="text-container-area-5">
                   <div class="text-box">
@@ -263,8 +279,14 @@
     </section>
     <section id="assoc_box">
       <h2 id="assoc_box-assoc-title">Asociaciones<br></h2>
-      <section>
-
+      <section id="assoc_box-main">
+        <ul>
+          <li> <img src="RESOURCES/1-bw.png" alt=""> <img src="RESOURCES/1.png" alt=""> </li>
+          <li> <img src="RESOURCES/2-bw.png" alt=""> <img src="RESOURCES/2.png" alt=""> </li>
+          <li> <img src="RESOURCES/3-bw.png" alt=""> <img src="RESOURCES/3.png" alt=""> </li>
+          <li> <img src="RESOURCES/4-bw.png" alt=""> <img src="RESOURCES/4.png" alt=""> </li>
+          <li> <img src="RESOURCES/5-bw.png" alt=""> <img src="RESOURCES/5.png" alt=""> </li>
+        </ul>
       </section>
     </section>
     <section id="team_box">
@@ -344,8 +366,31 @@
     </section>
     <section id="post_box">
       <h2 id="post_box-post-title">Publicaciones</h2>
-      <section>
-
+      <section id="post_box-main">
+        <article class="post_box-post" id="post_1">
+          <div id="post_box-postimg"></div>
+          <h2 id="post_box-posttitle">Nueva titulacion obtenida - Ethics and Compliance Initiative</h2>
+          <div id="post_box-postsubtitle">
+            <p>Dicha titulación nos posiciona a la vanguardia del Compliance logrando brindar a nuestros clientes cada [...]</p>
+            <a onclick="togglePost(this)" id="post_1">VER</a>
+          </div>
+        </article>
+        <article class="post_box-post" id="post_2">
+          <div id="post_box-postimg"></div>
+          <h2 id="post_box-posttitle">Ley de defensa de la competencia (27.4872)</h2>
+          <div id="post_box-postsubtitle">
+            <p>Algunas consideraciones prácticas para su entendimiento, a la luz de la reciente reglamentación</p>
+            <a onclick="togglePost(this)" id="post_2">VER</a>
+          </div>
+        </article>
+        <article class="post_box-post" id="post_3">
+          <div id="post_box-postimg"></div>
+          <h2 id="post_box-posttitle">Análisis del fallo de la Corte Suprema “Editorial Río Negro SA”</h2>
+          <div id="post_box-postsubtitle">
+            <p>En una somera elaboración jurisprudencial, por las consideraciones que a [...]</p>
+            <a onclick="togglePost(this)" id="post_3">VER</a>
+          </div>
+        </article>
       </section>
     </section>
     <section id="contact_box">
@@ -367,7 +412,7 @@
           </div>
           <hr>
           <form id="contact_box-form" action="">
-            <h2>Envíenos un mensaje.</h2>
+            <h2>Envíenos un mensaje</h2>
             
             <label for="nombre">Nombre:</label>
             <input name="nombre" type="text" required>
@@ -397,5 +442,7 @@
     <script src="JS/slider.js"></script>
     <script src="JS/nav.js"></script>
     <script src="JS/map.js"></script>
+    <script src="JS/post.js"></script>
+    <script src="JS/assoc.js"></script>
 </body>
 </html>

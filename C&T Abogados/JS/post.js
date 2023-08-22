@@ -25,7 +25,8 @@ function togglePost(post){
 
         var postTitle = document.querySelector('#post-content-1 h2');
         var postWriter = document.querySelector('#post-content-2 i b');
-        var postContent = document.querySelector('#post-content-2 p')
+        var postContent = document.querySelector('#post-content-2 textarea')
+
 
         switch(post.id){
             case 'post_1':{

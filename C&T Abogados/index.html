@@ -35,10 +35,8 @@
           <h3 onclick="togglePost()">×</h3>
         </div>
         <div id="post-content-2">
-          <h4><i>Por: <b></b></i><br></h4>
-          <p>
-            No se encontró la publicación.
-          </p>
+          <h4><i>por <b></b></i><br></h4>
+          <textarea readonly>Publicación no encontrada</textarea>
         </div>
       </article>
     </section>
@@ -54,11 +52,6 @@
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.137462640812!2d-58.388763324316095!3d-34.60068535733795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac7007f0bc7%3A0xbcd1e12598713d0a!2sViamonte%201348%20Piso%202%20H%2C%20C1053%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sbr!4v1691694600072!5m2!1ses-419!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <div id="idiom_box">
-        <img id="btn-spanish" onclick="toggleIdiom()"src="RESOURCES/language1.svg" alt="">
-        <img id="btn-english" onclick="toggleIdiom()"src="RESOURCES/language1.svg" alt="">
-        <h4 id="idiom_box-text">See page in English 🇬🇧</h4>
-    </div>
     <div id="fixed-contact_box">
       <a id="fixed-contact_box-wsp" target="blank_" href="https://api.whatsapp.com/send/?phone=541173699788&text&type=phone_number&app_absent=0">
         <h2 id="fixed-contact_box-wsp-text">Contáctenos vía WhatsApp</h2>
@@ -66,22 +59,22 @@
       </a>
     </div>
     <header id="header_box">
-        <img id="header_box-logo" src="RESOURCES/logo-sf.png" alt="">
-        <nav>
-            <a href="#about_box" id="btn_about">Acerca</a>
-            <hr>
-            <a href="#info_box" id="btn_areas">Areas de práctica</a>
-            <hr>
-            <a href="#team_box" id="btn_team">Equipo</a>
-            <hr>
-            <a href="#post_box" id="btn_post">Publicaciones</a>
-            <hr>
-            <a href="#contact_box" id="btn_contact">Contacto</a>
-        </nav>
-        <div id="btn-open_menu" onclick="toggleMenu(this)">
-            <img src="RESOURCES/menu.svg" alt="">
-        </div>
-        
+      <img id="header_box-logo" src="RESOURCES/logonuevo-2.png" alt="">
+      <nav>
+          <a href="#info_box" id="btn_areas">Areas de práctica</a>
+          <hr>
+          <a href="#team_box" id="btn_team">Equipo</a>
+          <hr>
+          <a href="#post_box" id="btn_post">Publicaciones</a>
+          <hr>
+          <a href="#contact_box" id="btn_contact">Contacto</a>
+          
+          <div id="btn_idiom" onclick="toggleIdiom()"><img id="img_idiom" src="RESOURCES/english-flag.jpg">See in English</div>
+      </nav>
+      <div id="btn-open_menu" onclick="toggleMenu(this)">
+          <img src="RESOURCES/menu.svg" alt="">
+      </div>
+      
     </header>
     <div class="spacer">
         
@@ -89,14 +82,12 @@
     <section id="main_box">
         <div id="main_box-1">
             <h2>Entender. Acompañar. Solucionar.</h2>
-            <img src="RESOURCES/logo-sf-2.svg" alt="">
         </div>
 
     </section>
     <section id="about_box">
       <h2 id="about_box-about-title">Acerca de</h2>
       <div id="about_box-1">
-        <img src="RESOURCES/logo-sf-3.png" alt="">
         <p id="about_text">
           CYT Abogados fue fundado por profesionales jóvenes, con alta capacitación y con experiencia en diversas áreas de la abogacía, prestando servicios tanto a particulares como a empresas, con vocación de servicio y orientación a resultados. Con capacitación continua y permanente, buscamos asesorar a nuestros clientes trabajando de manera cercana y ofreciendo valor agregado con calidad técnica en las áreas de práctica del estudio.
         </p>
@@ -109,40 +100,41 @@
             <div class="container reveal fade-left">
               <h2 id="area_title">Económico Empresarial</h2>
               <hr id="area_title-line">
+              
               <div class="text-container" id="text-container-area-1">
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Asesoramiento a empresas Fintech, emprendedores y StartUps
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Asesoramiento general en derecho de los negocios
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Litigios de complejidad
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Contratos comerciales
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Financiamiento y desarrollo de nuevos negocios
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Reestructuración de pasivos y procesos concursales
                   </p>
                 </div>
@@ -156,38 +148,38 @@
               <hr id="area_title-line">
               <div class="text-container" id="text-container-area-2">
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Elaboración de planes globales para reducir la litigiosidad en la empresa
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Medidas para fortalecer el control de ausentismo y licencias laborales
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Representación y patrocinio jurídico en asuntos litigiosos
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Consultoría en derecho individual y colectivo del trabajo
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Aspectos laborales del Derecho Migratorio
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Despidos y enfermedades profesionales
                   </p>
                 </div>
@@ -201,32 +193,32 @@
               <hr id="area_title-line">
               <div class="text-container" id="text-container-area-3">
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Defensa del consumidor y lealtad comercial
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Litigios individuales y colectivos
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Reclamos y asistencia a audiencias extrajudiciales
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Manejo de cartera de reclamos masivos
                   </p>
                 </div>
                 <div class="text-box">
-                    <img src="RESOURCES/checkmark2.svg" alt="">
                   <p>
+                    <img src="RESOURCES/checkmark.svg" alt="">
                     Consultoría en planes internos de mitigación de conflictos
                   </p>
                 </div>
@@ -281,11 +273,11 @@
       <h2 id="assoc_box-assoc-title">Asociaciones<br></h2>
       <section id="assoc_box-main">
         <ul>
-          <li> <img src="RESOURCES/1-bw.png" alt=""> <img src="RESOURCES/1.png" alt=""> </li>
-          <li> <img src="RESOURCES/2-bw.png" alt=""> <img src="RESOURCES/2.png" alt=""> </li>
-          <li> <img src="RESOURCES/3-bw.png" alt=""> <img src="RESOURCES/3.png" alt=""> </li>
-          <li> <img src="RESOURCES/4-bw.png" alt=""> <img src="RESOURCES/4.png" alt=""> </li>
-          <li> <img src="RESOURCES/5-bw.png" alt=""> <img src="RESOURCES/5.png" alt=""> </li>
+          <li> <div class="img" style="background-image: url('RESOURCES/1-bw.png');"> </div> <div class="img" style="background-image: url('RESOURCES/1.png');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/2-bw.png');"> </div> <div class="img" style="background-image: url('RESOURCES/2.png');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/3-bw.png');"> </div> <div class="img" style="background-image: url('RESOURCES/3.png');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/4-bw.png');"> </div> <div class="img" style="background-image: url('RESOURCES/4.png');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/5-bw.png');"> </div> <div class="img" style="background-image: url('RESOURCES/5.png');"> </div></li>
         </ul>
       </section>
     </section>
@@ -432,9 +424,8 @@
 
 
     <footer id="footer_box">
-        <section id="footer_box-1">
-            <h2 #id="footer_box-text">© C&T Abogados</h2>
-        </section>
+      <h2>© C&T Abogados</h2>
+      <h4>Desarrollado por Mariano Sibello, Agustín Turco, Nicolás Cabral, Facundo Rosales y Francisco Peralta</h4>
     </footer>
 
     <script src="JS/responsive.js"></script>

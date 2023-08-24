@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C&T Abogados - Entender. acompañar. solucionar.</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="RESOURCES/cyt-favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Urbanist:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&family=REM&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Sen:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="mobile-nav_box">
+        <nav>
+            <h2 id="btn-close_menu" onclick="toggleMenu(this)">×</h2>
+            <a href="#about_box" id="mobile-btn_about">ACERCA</a>
+            <a href="#info_box" id="mobile-btn_areas">AREAS DE PRÁCTICA</a>
+            <a href="#team_box" id="mobile-btn_team">EQUIPO</a>
+            <a href="#post_box" id="mobile-btn_post">PUBLICACIONES</a>
+            <a href="#contact_box"id="mobile-btn_team">CONTACTO</a>
+            <a onclick="toggleIdiom()" id="mobile-btn-idiom">See page in english</a>
+        </nav>
+    </div>
+    <section id="post-content_box">
+      <article id="post-content">
+        <div id="post-content-1">
+          <h2>
+            Error
+          </h2>
+          <h3 onclick="togglePost()">×</h3>
+        </div>
+        <div id="post-content-2">
+          <h4><i><b></b></i><br></h4>
+          <textarea readonly>Publicación no encontrada</textarea>
+        </div>
+      </article>
+    </section>
+    <section id="map_box">
+      <div id="map_box-info">
+        <div id="map_box-info-1">
+          <h2>Ubicación del estudio</h2>
+          <h4>Viamonte 1348 Piso 2 H - C1053ACB - CABA</h4>
+        </div>
+        <div id="map_box-info-2">
+          <h3 id="close_map_info" onclick="toggleMap()">Volver a la página</h3>
+        </div>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.137462640812!2d-58.388763324316095!3d-34.60068535733795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac7007f0bc7%3A0xbcd1e12598713d0a!2sViamonte%201348%20Piso%202%20H%2C%20C1053%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sbr!4v1691694600072!5m2!1ses-419!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div id="fixed-contact_box">
+      <a id="fixed-contact_box-wsp" target="blank_" href="https://api.whatsapp.com/send/?phone=541173699788&text&type=phone_number&app_absent=0">
+        <h2 id="fixed-contact_box-wsp-text">Contáctenos vía WhatsApp</h2>
+        <img id="fixed-contact_box-wsp-text-img" src="RESOURCES/whatsapp.svg" alt="">
+      </a>
+    </div>
+    <header id="header_box">
+      <img id="header_box-logo" src="RESOURCES/logonuevo-2.webp" alt="">
+      <nav>
+          <a href="#info_box" id="btn_areas">Areas</a>
+          <hr>
+          <a href="#team_box" id="btn_team">Equipo</a>
+          <hr>
+          <a href="#post_box" id="btn_post">Publicaciones</a>
+          <hr>
+          <a href="#contact_box" id="btn_contact">Contacto</a>
+          
+          <div id="btn_idiom" onclick="toggleIdiom()"><img id="img_idiom" src="RESOURCES/english-flag.webp">See in English</div>
+      </nav>
+      <div id="btn-open_menu" onclick="toggleMenu(this)">
+          <img src="RESOURCES/menu.svg" alt="">
+      </div>
+      
+    </header>
+    <div class="spacer">
+        
+    </div>
+    <section id="main_box">
+        <div id="main_box-1">
+            <h2>Entender. Acompañar. Solucionar.</h2>
+        </div>
+
+    </section>
+    <section id="about_box">
+      <h2 id="about_box-about-title">Acerca de</h2>
+      <div id="about_box-1">
+        <p id="about_text">
+          CYT Abogados fue fundado por profesionales jóvenes, con alta capacitación y con experiencia en diversas áreas de la abogacía, prestando servicios tanto a particulares como a empresas, con vocación de servicio y orientación a resultados. Con capacitación continua y permanente, buscamos asesorar a nuestros clientes trabajando de manera cercana y ofreciendo valor agregado con calidad técnica en las áreas de práctica del estudio.
+        </p>
+      </div>
+    </section>
+    <section id="info_box">
+        <h2 id="info_box-section-title">Areas  Prácticas</h2>
+
+        <section id="info_box-container">
+            <div class="container reveal fade-left">
+              <h2 id="area_title1">Económico Empresarial</h2>
+              <hr id="area_title-line">
+              
+              <div class="text-container" id="text-container-area-1">
+                <div class="text-box">
+                  <p id="a1">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Asesoramiento a empresas Fintech, emprendedores y StartUps
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="a2">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Asesoramiento general en derecho de los negocios
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="a3">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Litigios de complejidad
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="a4">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Contratos comerciales
+                  </p> 
+                </div>
+                <div class="text-box">
+                  <p id="a5">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Financiamiento y desarrollo de nuevos negocios
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="a6">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Reestructuración de pasivos y procesos concursales
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+          
+        <section id="info_box-container">
+            <div class="container reveal fade-right">
+              <h2 id="area_title2">Derecho laboral</h2>
+              <hr id="area_title-line">
+              <div class="text-container" id="text-container-area-2">
+                <div class="text-box">
+                  <p id="b1">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Elaboración de planes globales para reducir la litigiosidad en la empresa
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="b2">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Medidas para fortalecer el control de ausentismo y licencias laborales
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="b3">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Representación y patrocinio jurídico en asuntos litigiosos
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="b4">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Consultoría en derecho individual y colectivo del trabajo
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="b5">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Aspectos laborales del Derecho Migratorio
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="b6">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Despidos y enfermedades profesionales
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+        
+        <section id="info_box-container">
+            <div class="container reveal fade-left">
+              <h2 id="area_title3">Civil y comercial</h2>
+              <hr id="area_title-line">
+              <div class="text-container" id="text-container-area-3">
+                <div class="text-box">
+                  <p id="c1">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Defensa del consumidor y lealtad comercial
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="c2">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Litigios individuales y colectivos
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="c3">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Reclamos y asistencia a audiencias extrajudiciales
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="c4">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Manejo de cartera de reclamos masivos
+                  </p>
+                </div>
+                <div class="text-box">
+                  <p id="c5">
+                    <img src="RESOURCES/checkmark.svg" alt="">
+                    Consultoría en planes internos de mitigación de conflictos
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="info_box-last3">
+          <section id="info_box-container">
+              <div class="container reveal fade-right">
+                <h2 id="area_title4">Societario</h2>
+                <hr id="area_title-line">
+                <div class="text-container" id="text-container-area-4">
+                  <div class="text-box">
+                    <p id="d1">
+                      Asesoramos a clientes tanto nacionales como internacionales en la creación y seguimiento diario de estructuras societarias, para llevar adelante sus asuntos societarios cotidianos y el giro comercial propio
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          
+          <section id="info_box-container">
+              <div class="container reveal fade-left">
+                <h2 id="area_title5">Academia y consultoría</h2>
+                <hr id="area_title-line">
+                <div class="text-container" id="text-container-area-5">
+                  <div class="text-box">
+                    <p id="d2">
+                      Brindamos asesoramiento y consultoría a partir de talleres, cursos y clases sobre las materias de nuestra especialidad
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </section>
+          
+          <section id="info_box-container">
+              <div class="container reveal fade-right">
+                <h2 id="area_title6">Cumplimiento normativo</h2>
+                <hr id="area_title-line">
+                <div class="text-container" id="text-container-area-6">
+                  <div class="text-box" id="sgga">
+                    <p id="d3">
+                      Desarrollo del programa de Compliance, implementación de herramientas y elementos en los programas de integridad empresarial
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </section>
+    </section>
+    <section id="assoc_box">
+      <h2 id="assoc_box-assoc-title">Asociaciones<br></h2>
+      <section id="assoc_box-main">
+        <ul>
+          <li> <div class="img" style="background-image: url('RESOURCES/1-bw.webp');"> </div> <div class="img" style="background-image: url('RESOURCES/1.webp');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/2-bw.webp');"> </div> <div class="img" style="background-image: url('RESOURCES/2.webp');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/3-bw.webp');"> </div> <div class="img" style="background-image: url('RESOURCES/3.webp');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/4-bw.webp');"> </div> <div class="img" style="background-image: url('RESOURCES/4.webp');"> </div></li>
+          <li> <div class="img" style="background-image: url('RESOURCES/5-bw.webp');"> </div> <div class="img" style="background-image: url('RESOURCES/5.webp');"> </div></li>
+        </ul>
+      </section>
+    </section>
+    <section id="team_box">
+      <h2 id="team_box-team-title">Equipo</h2>
+      <div class="slider">
+        <div class="slide active">
+          <div class="img-abogado" style="background-image: url('RESOURCES/julian-guillermo-cosso.webp');">
+            
+          </div>
+          <div class="info">
+            <h2>Julián Guillermo Cosso</h2>
+            <p id="p-equipo1">
+              Abogado por la Universidad de Buenos Aires, diploma de honor y premio al mérito académico.
+              El Dr. Cosso es especialista en derecho empresarial y ha realizado diversos cursos de perfeccionamiento en las áreas de litigio comercial y derecho laboral, además de ser miembro activo de institutos de investigación jurídica de la Universidad de Buenos Aires. </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-abogado" style="background-image: url('RESOURCES/bautista-lopez-silva.webp');">
+            
+          </div>
+          <div class="info">
+            <h2>Bautista Lopez Silva</h2>
+            <p id="p-equipo2">
+              Abogado por la Universidad Nacional de Cuyo (2016). 
+              Especialista en derecho familiar y gestión patrimonial.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-abogado" style="background-image: url('RESOURCES/sofia-cristaldi.webp');">
+            
+          </div>
+          <div class="info">
+            <h2>Sofía Cristaldi</h2>
+            <p id="p-equipo3">
+              Estudiante avanzada de la Facultad de Derecho y Ciencias Sociales de la Universidad de Buenos Aires (UBA), con orientación en derecho empresarial.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-abogado" style="background-image: url('RESOURCES/juan-carlos-centurion.webp');">
+            
+          </div>
+          <div class="info">
+            <h2>Juan Carlos Centurion</h2>
+            <p id="p-equipo4">
+              <i>Consultor asociado.</i>
+              <br> <br>
+              Abogado (UNSAM), diploma de honor y premio al mérito académico, con orientación en derecho privado. Asistente y orador de numerosos congresos y conferencias, actualmente se desempeña como of counsel en las materias de su especialidad.
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-abogado" style="background-image: url('RESOURCES/german-monachesi.webp');">
+            
+          </div>
+          <div class="info">
+            <h2>German Monachesi</h2>
+            <p id="p-equipo5">
+              Contador (UB), especialista en asesoramiento contable e impositivo junto al área de Payroll. Encargado de planificación impositiva y consultoría.
+            </p>
+          </div>
+        </div>
+        <div class="navigation">
+          <b class="fas fa-chevron-left prev-btn"><</b>
+          <b class="fas fa-chevron-right next-btn">></b>
+        </div>
+        <div class="navigation-visibility">
+          <div class="slide-icon active"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+          <div class="slide-icon"></div>
+        </div>
+      </div>   
+    </section>
+    <section id="post_box">
+      <h2 id="post_box-post-title">Publicaciones</h2>
+      <section id="post_box-main">
+        <article class="post_box-post" id="post_1">
+          <div id="post_box-postimg"></div>
+          <h2 id="post_box-posttitle1">Nueva titulacion obtenida - Ethics and Compliance Initiative</h2>
+          <div id="post_box-postsubtitle1">
+            <p>Dicha titulación nos posiciona a la vanguardia del Compliance logrando brindar a nuestros clientes cada [...]</p>
+            <a onclick="togglePost(this)" id="post_1">VER</a>
+          </div>
+        </article>
+        <article class="post_box-post" id="post_2">
+          <div id="post_box-postimg"></div>
+          <h2 id="post_box-posttitle2">Ley de defensa de la competencia (27.442)</h2>
+          <div id="post_box-postsubtitle2">
+            <p>Algunas consideraciones prácticas para su entendimiento, a la luz de la reciente reglamentación</p>
+            <a onclick="togglePost(this)" id="post_2">VER</a>
+          </div>
+        </article>
+        <article class="post_box-post" id="post_3">
+          <div id="post_box-postimg"></div>
+          <h2 id="post_box-posttitle3">Análisis del fallo de la Corte Suprema “Editorial Río Negro SA”</h2>
+          <div id="post_box-postsubtitle3">
+            <p>En una somera elaboración jurisprudencial, por las consideraciones que a [...]</p>
+            <a onclick="togglePost(this)" id="post_3">VER</a>
+          </div>
+        </article>
+      </section>
+    </section>
+    <section id="contact_box">
+        <h2 id="contact_box-contact-title">Contacto</h2>
+        <section id="contact_box-main">
+          <div id="contact_box-info">
+            <div id="contact_box-info-num">
+              <img src="RESOURCES/whatsapp.svg" alt="">
+              <a href="https://api.whatsapp.com/send/?phone=541173699788&text&type=phone_number&app_absent=0" target="_blank"><h2>+54 11 7369-9788</h2></a>
+            </div>
+            <div id="contact_box-info-mail">
+              <img src="RESOURCES/envelop.svg" alt="">
+              <a href="mailto:legales@abogadoscyt.com" target="_blank"><h2>legales@abogadoscyt.com</h2></a>
+            </div>
+            <div id="contact_box-info-location">
+              <img src="RESOURCES/location.svg" alt="">
+              <h2 id="address_text" onclick="toggleMap()">Viamonte 1348 Piso 2 H - C1053ACB - CABA</h2>
+            </div>
+          </div>
+          <hr>
+          <form id="contact_box-form" action="">
+            <h2 id="form-t">Envíenos un mensaje</h2>
+            
+            <label id="form-nombre" for="nombre">Nombre:</label>
+            <input name="nombre" type="text" required>
+
+            <label id="form-correo" for="correo">Correo electrónico:</label>
+            <input name="correo" type="email" required>
+
+            <label id="form-cel" for="numero">Número de teléfono/celular:</label>
+            <input name="numero" type="tel">
+
+            <label id="form-mensaje" for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
+            <input id="form-boton" type="submit" value="Enviar mensaje">
+          </form>
+        </section>
+    </section>
+
+
+    <footer id="footer_box">
+      <h2>© C&T Abogados</h2>
+      <h4>Web desarrollada por Mariano Sibello, Agustín Turco, Nicolás Cabral, Facundo Rosales y Francisco Peralta</h4>
+    </footer>
+
+    <script src="JS/responsive.js"></script>
+    <script src="JS/translator.js"></script>
+    <script src="JS/slider.js"></script>
+    <script src="JS/nav.js"></script>
+    <script src="JS/map.js"></script>
+    <script src="JS/post.js"></script>
+    <script src="JS/assoc.js"></script>
+</body>
+</html>
